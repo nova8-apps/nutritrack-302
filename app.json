@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "NutriTrack",
+    "slug": "nutritrack",
+    "icon": "./assets/icon.png",
+    "ios": {
+      "icon": "./assets/icon.png",
+      "bundleIdentifier": "com.nutritrack.app",
+      "appleTeamId": "YZP4MFJ47H",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses your camera to take photos and videos.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to let you select images.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "buildNumber": "1",
+      "privacyPolicyUrl": "https://nova8.dev/privacy/302",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "package": "com.nutritrack.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/[REPLACE_AFTER_FIRST_BUILD]",
+      "requestHeaders": {
+        "expo-channel-name": "production"
+      }
+    },
+    "extra": {
+      "privacyPolicyUrl": "https://nova8.dev/privacy/302",
+      "apiBaseUrl": "https://3000-i7wkyqsvcflfj0eod957x.e2b.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "minSdkVersion": 24,
+            "enableMinifyInReleaseBuilds": true
+          },
+          "ios": {
+            "deploymentTarget": "16.0"
+          }
+        }
+      ],
+      "expo-apple-authentication"
+    ],
+    "scheme": "app"
+  }
+}
